@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+            integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Store App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/4efece833a.js"></script>
+    
+</head>
+<body>
+        <% include header %> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.14.1/ckeditor.js"
+               integrity="sha256-bEIQpI72w9NJuIVhTLFUF2/8uxl0u5800r8ddViuv+o=" crossorigin="anonymous"></script>
+       
+
+    <div class="container text-center">
+        <h3 class="text-danger">   <span class="fa fa-google-plus"></span> </h3>
+        <br>
+        <div class="card mb-3 " style="max-width: 540px;margin: 0 auto;">
+            <div class="row no-gutters">
+              <div class="col-md-4 text-center">
+                <img src="<%= user.google.photo %> " class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body border-left border-info bg-light">
+                  <h5 class="card-title"><%= user.google.name %></h5>
+                  <p class="card-tex text-success"><%= user.google.email %></p>
+                  <a href="/logout" class="btn btn-primary btn-sm">Logout <i class="fa fa-sign-out" aria-hidden="true"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+</body>
+</html>
